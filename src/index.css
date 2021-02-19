@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+html{
+  background-color: rgba(2, 22, 16, 0.849);
+
+}
+.center {
+  margin: auto;
+  margin-top: 10%;
+  width: 30%;
+ 
+  border: 2px solid gray;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+.box{
+  background-color: rgba(2, 22, 16, 0.849);
+  padding: 50px 0;
+  border-radius: 20px;
+  border: 3px solid  rgb(7, 252, 170); 
+
+}
+
+.inputdata{
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+.inputdata input{
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(11, 65, 65);
+  border: 2px solid  rgb(54, 192, 146); 
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  outline: none;
+  color: rgb(47, 196, 196);
+  
+  
+}
+
+.inputdata ::placeholder{
+  color: rgb(47, 196, 196);
+  font-weight: 500;
+}
+
+.info{
+  margin-top:10% ;
+}
+
+.box h1,h2,h3{
+  color: rgb(54, 192, 146);
+  text-align: center;
+}
+
+.box h2{
+  
+  font-size: 2.8rem;
+  font-family: 'Jost', sans-serif;
+  
+}
+
+.error{
+  text-align: center;
+  margin: 30% 0;
+  font-size: 1.5rem;
+  color:rgb(241, 75, 75) ;
+}
+.error p{
+  font-size: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  .inputdata{
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width: 800px){
+  .box {
+    width: 60%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  .inputdata{
+    margin-left: 30%;
+  }
+}
+
+@media screen and (min-width:800px) and (max-width: 1024px){
+  .box {
+    width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+
+  .inputdata{
+    margin-left: 30%;
+  }
+}
