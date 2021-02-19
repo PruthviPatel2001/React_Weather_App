@@ -12,7 +12,7 @@ const TempApp = () => {
         //    console.log(response);
            const resJson = await response.json();
         //    console.log(resJson);
-           setcity(resJson.main);
+           setcity(resJson);
        }
        fetchApi();
 
@@ -44,10 +44,10 @@ const TempApp = () => {
                     <div className="info">
                       <h2 className="location">
                         <i className="fas fa-street-view"></i>
-                        {search} 
+                        {city.name} 
                       </h2>
-                      <h1 className="temp">{ city.temp} °Cel</h1>
-                     <h3 className="temp_max">Min :{city.temp_min} °Cel | Max : { city.temp_max} °Cel</h3>
+                      <h1 className="temp">{ city.main.temp} °Cel</h1>
+                     <h3 className="temp_max">Min :{city.main.temp_min} °Cel | Max : { city.main.temp_max} °Cel</h3>
                    </div>
 )}
             
